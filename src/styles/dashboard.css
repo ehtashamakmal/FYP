@@ -1,0 +1,70 @@
+/* CardStyles.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h4 {
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+  
+  /* Additional styling for responsiveness */
+  @media (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+  /* dashboard.css */
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .column-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    flex-grow: 1; /* Allow the container to grow and take available space */
+  }
+  
+  .column {
+    margin: 0 20px;
+  }
+  
+  .card {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    max-width: 300px; /* Set a fixed max-width for the cards */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Display ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .skills {
+    font-style: italic;
+  }
+  
